@@ -1,50 +1,36 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image';
+import styles from './page.module.css';
+//import Image1 from './image1.webp';
+
+// const handleClick = () => {
+//   console.log('clicked');
+// };
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <div>
+          <img
+            src="https://images.mlssoccer.com/image/private/t_editorial_landscape_8_desktop_mobile/f_auto/mls-sea/cft8sh9v0et9je6vmt49"
+            alt="soccer player 1"
+            width={180}
+          />
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+          <img
+            src="https://images.seattletimes.com/wp-content/uploads/2024/03/03022024_goal_220809.jpg?d=780x520"
+            alt="soccer player 2"
+            width={180}
+          />
+
+          <img
+            src="https://www.sounderatheart.com/content/images/size/w1304/2024/08/53724783328_f012226658_o--1-.jpg"
+            alt="soccer player 3"
+            width={180}
+          />
         </div>
+
+        <button>Click me</button>
       </main>
       <footer className={styles.footer}>
         <a
